@@ -1,5 +1,4 @@
 
-
 (function(exports) {
   function NoteList() {
     this.notes = [];
@@ -11,12 +10,12 @@
       return note;
   }
 
-  NoteList.prototype.getNotes = function() {
+  NoteList.prototype.returnNotes = function() {
     return this.notes;
   }
 
   exports.NoteList = NoteList
-})(this)
+})(this);
 
 
 

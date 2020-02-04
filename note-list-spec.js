@@ -7,12 +7,12 @@
 })();
 
 
-(function testGetNotes() {
+(function testReturnNotes() {
   var noteList = new NoteList();
   noteList.createNote('Hello');
   noteList.createNote('Hey');
-  assert.isTrue(noteList.getNotes().length === 2);
-  assert.isTrue(noteList.getNotes()[0].getText() === 'Hello');
+  assert.isTrue(noteList.returnNotes().length === 2);
+  assert.isTrue(noteList.returnNotes()[0].getText() === 'Hello');
 })();
 
 
