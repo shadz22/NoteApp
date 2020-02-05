@@ -1,0 +1,22 @@
+{
+  "name": "noteapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "assert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadz22/NoteApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shadz22/NoteApp/issues"
+  },
+  "homepage": "https://github.com/shadz22/NoteApp#readme",
+  "dependencies": {
+    "http-server": "^0.12.1"
+  }
+}
