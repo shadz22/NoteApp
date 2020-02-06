@@ -1,9 +1,10 @@
 // import { NoteList } from "./note-list-model";
 
-function NoteController() {
+(function(exports)  { 
+  function NoteController() {
   this.view = new View();
   this.noteList = this.view.noteList;
-
+  }
   
   NoteController.prototype.add = function(text) {
     this.noteList.createNote(text);
@@ -13,9 +14,9 @@ function NoteController() {
     return (this.view.returnHtmlString());
   }
 
-  NoteController.prototype.insert = function() {
+  NoteController.prototype.insert = function(id, doc = document) {
     var message = this.htmlify();
-    var element = document.getElementById("app")
+    var element = doc.getElementById(id)
     element.innerHTML = message
   }
 
@@ -25,6 +26,7 @@ function NoteController() {
     element.innerHTML = message;
     
   }
-}
-  
-  
+
+  exports.NoteController = NoteController;
+
+})(this);
